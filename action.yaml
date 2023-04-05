@@ -36,6 +36,10 @@ runs:
       run: npm install -g firebase-tools
       shell: bash
 
+    - name: Install project dependencies
+      run: yarn install
+      shell: bash
+
     - name: 'Authenticate to Google Cloud'
       uses: 'google-github-actions/auth@v1'
       with:
